@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5 {
 
 .container {
   width: 880px;
-  min-width: 735px;
-  /* TB LR */
+ 
   margin: 0 auto;
 }
 
+/* TABLET*/
 @media(max-width: 1005px) {
 .container {   
   max-width: 100%;
@@ -83,14 +83,15 @@ header {
     flex-wrap: wrap;
     justify-content: center;
 }
-header nav {
-    order: 2;
-}
+
 header .logo{
     align-self: center;
     order: 1;
     margin-left: 300px;
     margin-right: 350px;
+}
+header nav a {
+    order: 2;
 }
 section.cta {
     height: 400px;
@@ -104,41 +105,54 @@ section.cta {
     margin-right: 200px;
     margin-top: 150px;
 }
+}
 
+/*MOBILE*/
+@media (max-width: 630px) {
+.contaier {
+    max-width: 500px;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0px auto;
+
+}
+header nav a {
+align-self: fluid;
+  font-size: 30px;
+  border: 1px solid black;
+  margin: 0px auto;
+  width: 500px;
+  height: 100px;
+}
 }
 
 /* header */
 
 header nav {
-  display: inline-block;
-  width: 691px;
-  vertical-align: top;
-  margin-top: 35px;
+display: flex;
+justify-content: space-between;
+flex-direction: row;
+margin: 50px 25px;	
 }
 
 header nav a {
-  display: inline-block;
-  margin-right: 65px;
-  font-size: 14px;
-  color: gray;
-  text-decoration: none;
+	margin: 0px 0px 0px 50px;
+	color: grey;
+	text-decoration: none;
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
 
-header nav a:first-child {
-  margin-left: 0;
-}
-
-header nav a:last-child {
-  margin-right: 0;
-}
 
 header .logo {
-  display: inline-block;
-  margin-top: 25px;
+  display: flex;
+	justify-content: flex-end;
+	margin: 0 45px 0 75px;
 }
 
 /* cta */
