@@ -68,8 +68,43 @@ h1, h2, h3, h4, h5 {
 
 .container {
   width: 880px;
+  min-width: 735px;
   /* TB LR */
   margin: 0 auto;
+}
+
+@media(max-width: 1005px) {
+.container {   
+  max-width: 100%;
+ margin: 0 auto;
+  }
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+header nav {
+    order: 2;
+}
+header .logo{
+    align-self: center;
+    order: 1;
+    margin-left: 300px;
+    margin-right: 350px;
+}
+section.cta {
+    height: 400px;
+}
+.cta img {
+  visibility: hidden;
+}
+.cta .cta-text{
+    align-content: center;
+        margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 150px;
+}
+
 }
 
 /* header */
