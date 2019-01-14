@@ -7,7 +7,7 @@ It's time to expand our CSS skills into multiple devices.  You will be creating 
 * [ ] Fork the project into your GitHub user account
 * [ ] Clone the forked project into a directory on your machine
 * [ ] You are now ready to build this project with your preferred IDE
-
+beta
 ## Task 2: Project Objectives
 
 * [ ] Review each [design file](design-files).  Notice the subtle differences between them all. 
